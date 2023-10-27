@@ -21,7 +21,7 @@
     --White: hsl(0, 0%, 100%);
 }
 body{
-    max-width: 375px;
+    min-width: 375px;
     display: flex;
     justify-content: center;
     align-items: center;
