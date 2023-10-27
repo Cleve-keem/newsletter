@@ -21,7 +21,7 @@
     --White: hsl(0, 0%, 100%);
 }
 body{
-    min-width: 375px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,6 @@ body{
     display: none;
 }
 .wrapper{
-    width: 100%;
     display: flex;
     flex-direction: column-reverse;
 }
@@ -60,6 +59,9 @@ ul{
 li{
     margin-bottom: 10px;
     /* padding-left: 1rem; */
+}
+.right img.mobile-sign-up{
+    width: 100%;
 }
 form{
     display: flex;
