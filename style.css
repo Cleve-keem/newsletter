@@ -1,0 +1,88 @@
+@font-face {
+    font-family: myfont;
+    src: url(assets/fonts/Roboto-Regular.ttf)
+}
+@font-face{
+    font-family: myfont-bold;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+:root{
+    /* primary */
+    --Tomato: hsl(4, 100%, 67%);
+    /* neutral */
+    --Dark-slate-grey: hsl(234, 29%, 20%);
+    --Charcoal-grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    max-width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: myfont;
+}
+.invisible{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.left{
+    background: var(--White);
+    padding: 1.5rem;
+}
+.left h1{
+    margin-bottom: 1rem;
+    font-family: myfont-bold;
+    color: var(--Charcoal-grey);
+    font-size: 2.5rem;
+}
+.left p{
+    font-size: 16px;
+    margin-bottom: 1.3rem;
+}
+ul{
+    list-style-image: url(assets/images/icon-list.svg);
+    list-style-position: inside;
+    margin-bottom: 2rem;
+}
+li{
+    margin-bottom: 10px;
+    /* padding-left: 1rem; */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+form input, form button{
+    padding: 15px 1.3rem;
+    border-radius: 5px;   
+}
+input{
+    border: 1px solid var(--Grey);
+    margin-bottom: 0.9rem;
+    outline: none;
+}
+button{
+    border: none;
+    background-color: var(--Dark-slate-grey);
+    color: var(--White);
+    font-weight: bold;
+}
