@@ -23,9 +23,11 @@
 body{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: myfont;
+    position: relative;
 }
 .invisible{
     display: none;
@@ -34,8 +36,11 @@ body{
     display: none;
 }
 .wrapper{
+    width: 375px;
+    max-width: 500px;
     display: flex;
     flex-direction: column-reverse;
+    position: relative;
 }
 .left{
     background: var(--White);
@@ -73,7 +78,7 @@ label{
     font-weight: bold;
     margin-bottom: 5px;
 }
-form input, form button{
+form input, button{
     padding: 15px 1.3rem;
     border-radius: 5px;   
 }
@@ -87,4 +92,51 @@ button{
     background-color: var(--Dark-slate-grey);
     color: var(--White);
     font-weight: bold;
+}
+button:hover{
+    background: var(--Tomato);
+    transition: ease-in-out 1s;
+}
+
+/* message container design */
+.message{
+    position: absolute;
+    top: 5rem;
+    left: 2.3rem;
+    max-width: 80%;
+    padding: 2rem;
+    background-color: var(--White);
+    border-radius: 10px;
+}
+.success-icon{
+    width: 50px;
+    margin-bottom: 1rem;
+}
+.message h2{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: myfont-bold;
+    margin-bottom: 1rem;
+}
+.message p{
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+.message p span.bold{
+    color: var(--Dark-slate-grey);
+}
+.btn{
+    width: 100%;
+    margin-top: 2rem;
+}
+.overlay{
+    /* display: none; */
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
